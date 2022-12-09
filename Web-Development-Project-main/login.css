@@ -1,0 +1,97 @@
+body{
+    background-color: #f2f5f5;
+}
+/* navigation bar  */
+.option1{
+    justify-content: center; align-items: center;
+    display:flex;
+    font-family: 'Barlow', sans-serif; font-weight:bold;
+    padding:0px 30px;
+    margin-top:-5px;
+    
+}
+#webname{
+    text-decoration: none;
+    color: rgb(65, 61, 61);
+    font-size:40px ;   
+}
+.img1{
+    height:20px;
+    width:120px;
+    margin-top: 5px;
+    margin-left:10px;
+}
+
+#div1{
+    height: 60vh;
+    width: 60vh; 
+    background-color: white;
+    margin: auto; 
+    opacity: 0.9;
+    border-radius: 5px;
+}
+#heading2{
+    padding:40px 20px; 
+    font-family: 'Raleway', sans-serif; font-size: 23px; 
+    font-weight: 900;
+    margin-left: 5px;
+}
+.label{
+    padding: 25px;
+    font-family: 'Raleway', sans-seri ;font-weight: 900;
+    font-size: 13px;
+}
+
+.einput{
+    margin-left:25px;
+    margin-top: 7px;
+    height: 30px;
+    font-size:15px;
+}
+input:focus{
+    outline: #3c89e6;
+    border: 1px solid #3c89e6;
+    border-radius: 2px;
+}
+.submit-btn{
+    height:50px; 
+    width:400px; 
+    margin: 27px; 
+    background-color:lightblue;
+    border-radius: 5px; 
+    border: 0px lightblue; 
+    font-size: 15px; 
+    font-weight: bold;
+    color: #222224;
+}
+.link1{
+    text-decoration: none;
+    color:black;
+}
+.options:hover{
+    background:#3c89e6;
+    border-radius: 1px ;
+}
+#p2p span {
+    display: none;
+}
+#p2p:hover span{
+    display: inline;
+}
+#stf span {
+    display: none;
+}
+#stf:hover span{
+    display: inline;
+}
+.options{
+    justify-content: center; align-items: center;
+    font-size:18px;
+    display:flex;
+    color:black;
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif; font-weight:bold;
+    padding:0px 30px;
+    margin-top:-5px;
+    
+}

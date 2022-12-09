@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SIGN UP</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Shippori+Mincho:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+
+
+<body style="background-image: url(back.jpg);">
+    <header>
+    <div>
+        <div id=navbar
+            style="height:40px;  display :flex ; margin-top:-7px;margin-left:-8px;margin-right:-7px;background-color:lightblue;">
+            <!-- <div><img src="wazir-logo-blue.61ed8811.png" class="img1" /></div>-->
+
+            <div class="option1"><a href="#" id="webname">CryptoX</a></div>
+
+            <div class="options"><a href="#" class="link1">HOME</a></div>
+
+            <div class="options" id="p2p" >
+                <a href="#" class="link1" ></a>
+                    PRICELIST
+                    <!-- <span>PRICELIST</span> -->
+                </a>
+            </div>
+
+            <div class="options" >
+                <a href="#" class="link1" id="stf" >
+                    ANALYSIS
+                    <!-- <span></span> -->
+                </a>
+            </div>
+
+            <div style="flex:1;"></div>
+
+            <div class="options" ><a href="login.html" class="link1" >LOGIN</a></div>
+
+        </div>
+</header>
+        <div class="login_menu">
+
+            <h2 class="heading">
+                Signup to CryptoX
+
+                <hr style="margin-top:10px; margin-bottom: -35px;">
+
+            </h2>
+
+            <p class="p1">
+                Let's start by submitting your registration details.
+            </p>
+            <form >
+
+                <label class="label_" style="margin-top: -25px;">NAME</label><br>
+                <input type="text" size="50" class="input" id="name" onblur="namevalidate()">
+                <div id="vname" style="margin-left:25px;color: red; visibility: hidden;">Enter A Valid Name</div><br>
+
+                <label class="label_" style="margin-top: -25px;">EMAIL</label><br>
+                <input type="email" size="50" class="input" id="email" onblur="emailvalidate()
+                required
+                ">
+                <div id="vemail" style="margin-left:25px;color: red; visibility: hidden;">Enter A Valid Email</div><br>
+
+                <label class="label_" style="margin-top: -25px;">PHONE NUMBER</label><br>
+                <input type="text" size="50" class="input" id="number" onblur="pvalidate()">
+                <div id="pvalue" style="margin-left:25px;color: red; visibility: hidden;">Enter A Valid Phone Number
+                </div><br>
+
+                <label class="label_" style="margin-top: -25px;">Password</label><br>
+                <input type="password" size="50" class="input" id="pass" onblur="pwdvalidate()">
+                <div id="pwdvalue" style="margin-left:25px;color: red; visibility: hidden;">Password Cannot Be Empty</div><br>
+
+                <label class="label_">CONFIRM PASSWORD
+            
+                </label><br>
+                <input type="password" size="50" class="input" id="cpass">
+                <div id="vname" style="margin-left:25px;color: red; visibility: hidden;">Password Does Not Match</div>
+                <br>
+
+                <hr style="margin:-10px 25px 25px 25px;">
+
+                <div class="checkbox">
+                    
+                        <input type="checkbox" name="jatin"
+                            style="margin-left:20px;font-family:  'Raleway', sans-serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I
+                        agree to CryptoX's&nbsp; Terms of Service</div>
+                        
+                        <input type="submit"
+                        value="SIGN UP"  class="button" onclick="login()"/>
+                    </form>
+                
+                 
+                    <div>
+                        <a href="login.html" id="signup">Login</a>
+                    </div>
+
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+
+</html>

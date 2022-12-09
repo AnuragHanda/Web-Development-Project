@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WALLET</title>
+	<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">-->
+	<!--<link rel="stylesheet" type="text/css" href="wallet.css">-->
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="wallet.js"></script>
+	<script type="text/javascript" href="wallet.js"></script>
+<header>
+    <div><a href="home.html" style="text-decoration: none;" class="font">HOME</a></div>
+	<div><a href="pricelist.html" style="text-decoration: none;" class="font">PRICE LIST</a></div>
+	<div class="font" style="border-top:2px solid lightgrey;padding: 5px;">WALLET</div>
+	<div><a href="analysis.html" style="text-decoration: none;" class="font">ANALYSIS</a></div>
+	<p id="logo" class="font">CryptoX</p>
+</header>
+<hr style="color: white">
+<p class="font" style="font-size: 20px;text-align: center;">$$ YOUR CURRENT WEALTH (INR) $$</p>
+<p id="wealth" class="font" style="font-size: 20px;text-align: center;"></p>
+<table class="table table-dark table-sm table-hover">
+	<tr>
+		<th class="font">#</th>
+		<th class="font">ASSETS</th>
+		<th class="font">AVAILABLE BALANCE</th>
+		<th class="font">CURRENT PRICE</th>
+		<th class="font">ACTION</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>BITCOIN</td>
+		<TD id="btc_wealth">0</TD>
+		<td id="btc_price"></td>
+		<td><button onclick="buy_btc()">BUY</button><button onclick="sell_btc()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>ETHEREUM</td>
+		<td id="eth_wealth">0</td>
+		<td id="eth_price"></td>
+		<td><button onclick="buy_eth()">BUY</button><button onclick="sell_eth()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>BINANCE</td>
+		<td id="bnb_wealth">0</td>
+		<td id="bnb_price"></td>
+		<td><button onclick="buy_bnb()">BUY</button><button onclick="sell_bnb()">SELL</button></td>
+	</tr>
+	<!--<tr>
+		<td>4</td>
+		<td>MATIC</td>
+		<td id="matic_wealth">0</td>
+		<td id="matic_price"></td>
+		<td><button onclick="buy_matic()">BUY</button><button onclick="sell_matic()">SELL</button></td>
+	</tr>-->
+	<tr>
+		<td>4</td>
+		<td>DOGECOIN</td>
+		<td id="doge_wealth">0</td>
+		<td id="doge_price"></td>
+		<td><button onclick="buy_doge()">BUY</button><button onclick="sell_doge()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>5</td>
+		<td>SWIPE</td>
+		<td id="swipe_wealth">0</td>
+		<td id="swipe_price"></td>
+		<td><button onclick="buy_sxp()">BUY</button><button onclick="sell_sxp()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>6</td>
+		<td>LITECOIN</td>
+		<td id="ltc_wealth">0</td>
+		<td id="ltc_price"></td>
+		<td><button onclick="buy_ltc()">BUY</button><button onclick="sell_ltc()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>BITTORRENT</td>
+		<td id="btt_wealth">0</td>
+		<td id="btt_price"></td>
+		<td><button onclick="buy_btt()">BUY</button><button onclick="sell_btt()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>TRON</td>
+		<td id="trx_wealth">0</td>
+		<td id="trx_price"></td>
+		<td><button onclick="buy_trx()">BUY</button><button onclick="sell_trx()">SELL</button></td>
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>INR</td>
+		<td id="inr_wealth">500000</td>
+		<td id="">N/A</td>
+		<td><button onclick="deposit();">DEPOSIT</button><button onclick="withdraw()">WITHDRAW</button></td>
+	</tr>
+
+</table>
+</body>
+</html>

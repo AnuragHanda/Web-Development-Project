@@ -1,0 +1,27 @@
+body{
+	background-color: black;
+}
+
+header div{
+	display: inline-block;
+	margin: 10px;
+}
+header div:hover {
+	background-color: grey;
+}
+
+header p{
+	display: inline-block;
+}
+
+#logo{
+	font-size: 25px;
+	text-align: center;
+	margin-left: 21%;
+}
+
+/*General Claas*/
+.font{
+	color: white;
+	font-size: 16;
+}

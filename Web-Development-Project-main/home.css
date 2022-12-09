@@ -1,0 +1,62 @@
+body{
+	background-color: black;
+	height: 100%;
+	width: 100%
+}
+
+header div{
+	display: inline-block;
+	margin: 10px;
+}
+header div:hover {
+	background-color: grey;
+}
+
+header p{
+	display: inline-block;
+}
+
+#logo{
+	font-size: 25px;
+	text-align: center;
+	margin-left: 21%;
+}
+
+main{
+	display: inline-block;
+}
+
+main div{
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
+	/*transform: translateY(-125px);*/
+	border: 2px solid grey;
+	padding: 20px;
+	margin: 45px;
+}
+
+/*#box1{
+	background-image: url(btc.jpg);
+	background-size: cover;
+}
+
+/*General Claas*/
+.font{
+	color: white;
+	font-size: 16;
+}
+
+main div a{
+	text-decoration: none;
+	
+}
+
+main div a img{
+	width: 100px;
+	height: 100px;
+}
+
+
+/*==============================================================================================================*/

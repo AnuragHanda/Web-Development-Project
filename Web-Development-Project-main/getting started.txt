@@ -1,0 +1,23 @@
+﻿Hi, 
+Thanks for choosing CryptoX. We are more than happy to have a new member in the family.
+
+
+Before you begin using our application, kindly take care of the following requirements:
+1. Stable internet connection
+2. CORS extension enabled
+
+
+In case you have trouble finding this extension we are providing you the link
+https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en
+
+
+Please make sure that you meet the above requirements, otherwise the application may not work as expected. 
+
+
+Thanks and Regards
+CryptoX Development Team
+
+
+www.instagram.com/cryptox
+www.reddit.com/r/cryptox
+www.cryptox.com

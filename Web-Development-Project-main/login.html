@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LOGIN</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Shippori+Mincho:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body style="background-image: url(back.jpg);">
+    <div>
+        <div id=navbar
+            style="height:40px;  display :flex ; margin-top:-7px;margin-left:-8px;margin-right:-7px;background-color:lightblue;">
+            <!--<div><img src="wazir-logo-blue.61ed8811.png" class="img1" /></div>-->
+
+            <div class="option1"><a href="#" id="webname">CryptoX</a></div>
+
+
+            <div class="options" onclick="onClick()"><a href="#" class="link1">HOME</a></div>
+
+            <div class="options" id="p2p" onclick="onClick()">
+                <a href="#" class="link1">
+                    PRICELIST
+                    <!-- <span>-USDT/INR</span> -->
+                </a>
+            </div>
+
+            <div class="options" onclick="onClick()">
+                <a href="#" class="link1" id="stf" >
+                    ANALYSIS
+                    <!-- <span>-XBCK/USDT</span> -->
+                </a>
+            </div>
+
+            <div style="flex:1;"></div>
+
+            <div class="options"><a href="signup.html" class="link1">SIGN UP</a></div>
+
+        </div>
+
+        <div class="login_menu" id="div1">
+            <h2 id="heading2">
+                Login to CryptoX
+                <hr style="margin-top:10px; margin-bottom: -35px;">
+            </h2>
+
+            <form onsubmit= "return false">
+
+                <label class="label">EMAIL</label><br>
+                <input type="email" size="50" id="email" onblur="emailvalidate()"class="einput"><div id="vemail" style="margin-left:25px; visibility: hidden; color: red;">Email Not Found</div><br>
+
+                <label class="label">Password</label><br>
+                <input type="password" size="50" id="pass" onblur="pwdvalidate()" class="einput"><div id="pwdvalue" style="margin-left:25px;color: red; visibility: hidden;">Incorrect Password</div><br>
+
+                <hr style="margin: 0px 25px;">
+
+                <input type="Submit" value="LOGIN" onclick="login()" class="submit-btn">
+
+            </form>
+
+            <div>
+                <a href="signup.html" style="margin: 0px 202px;text-decoration: none;color: #355a94;">SignUp</a>
+
+            </div>
+
+        </div>
+    </div>
+<script type="text/javascript">
+    const email = document.getElementById("email");
+    const pass = document.getElementById("pass");
+
+    function emailvalidate() {
+    let regx = /^([a-z 0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+    let str = email.value;
+    if (regx.test(str)) {
+        document.getElementById("vemail").style.visibility = "hidden";
+        return true;
+
+    } else if (email.value=="") {
+            document.getElementById("vemail").innerHTML="Email Is Required";
+            document.getElementById("vemail").style.visibility = "visible";
+            return false;
+    }
+    else {
+        document.getElementById("vemail").innerHTML="Email Not Found";
+        document.getElementById("vemail").style.visibility = "visible";
+        return false;
+    }
+    return true;
+};
+
+    function pwdvalidate(){
+            var reg=/^([a-zA-Z]+)[a-zA-Z0-9\!\@\#\$\%\^\&\*\.\?;+=-_]{8,20}$/;
+            if(reg.test(pass.value)){
+                document.getElementById("pwdvalue").style.visibility = "hidden";
+                return true;
+            }
+            else if(pass.value ==""){
+                document.getElementById("pwdvalue").innerHTML="Password Is Required";
+                document.getElementById("pwdvalue").style.visibility = "visible";
+                return false;
+            }
+            else{
+                document.getElementById("pwdvalue").innerHTML="Incorrect Password";
+                document.getElementById("pwdvalue").style.visibility = "visible";
+                return false;
+            }
+            return true;
+        }
+        const vemail=document.getElementById("vemail");
+        const pwdvalue=document.getElementById("pwdvalue");
+
+        function onClick(){
+            alert("Please Login Or SignUp To Open")
+        };
+
+        function login() {
+            if (!emailvalidate()||!pwdvalidate()){
+                document.getElementById("vemail").innerHTML="Enter A Valid Email";
+        }else {
+            window.open("home.html");
+        }
+    }
+    
+</script>
+</body>
+
+</html>
